@@ -1,0 +1,11 @@
+# 20-pre-turn-wal — Write WAL session boundaries
+#
+# Records session_start at post_spawn and session_end at on_exit,
+# maintaining the WAL lifecycle bookends for /catchup recovery.
+
+name        = "pre-turn-wal"
+hooks       = ["post_spawn", "on_exit"]
+enabled     = true
+version     = "1.0.0"
+description = "Write WAL session_start and session_end boundary entries"
+author      = "system"

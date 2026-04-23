@@ -1,0 +1,11 @@
+# 50-post-turn-diff — Summarize file changes on exit
+#
+# Runs git diff --stat at on_exit and writes a one-line summary to WAL,
+# providing a record of what each session modified.
+
+name        = "post-turn-diff"
+hooks       = ["on_exit"]
+enabled     = false
+version     = "1.0.0"
+description = "Summarize git diff on session exit and append to WAL"
+author      = "system"

@@ -1,0 +1,6 @@
+# Runtime state — not source-controlled
+state/
+logs/
+inject-last-run
+pending-config-proposals.jsonl
+_*.claude.md

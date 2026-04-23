@@ -1,0 +1,11 @@
+# 30-budget-guard — Rate limit budget warnings
+#
+# Reads ~/.claude/widgets/.limits.json at pre_spawn and poll phases.
+# Warns when 5h usage exceeds threshold; optionally hard-stops at 0%.
+
+name        = "budget-guard"
+hooks       = ["pre_spawn", "poll"]
+enabled     = false
+version     = "1.0.0"
+description = "Warn at low remaining rate budget; optional hard-stop at 0%"
+author      = "system"

@@ -1,0 +1,11 @@
+# 40-recent-dir-context — Inject recent file changes as context
+#
+# Runs git log --since=1h in the CWD at pre_spawn, providing the new
+# session with awareness of what files were recently modified.
+
+name        = "recent-dir-context"
+hooks       = ["pre_spawn"]
+enabled     = false
+version     = "1.0.0"
+description = "Inject recent git changes in CWD as additionalContext"
+author      = "system"

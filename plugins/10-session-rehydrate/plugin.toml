@@ -1,0 +1,11 @@
+# 10-session-rehydrate — Inject prior session WAL state as context
+#
+# Reads the last WAL checkpoint and injects it as additionalContext so
+# the new session starts with awareness of what the previous session did.
+
+name        = "session-rehydrate"
+hooks       = ["pre_spawn"]
+enabled     = true
+version     = "1.0.0"
+description = "Inject prior session WAL state as additionalContext on spawn"
+author      = "system"

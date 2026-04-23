@@ -1,0 +1,11 @@
+# 00-auto-resume — Detect rate limit / API errors and auto-resume sessions
+#
+# This is the original claudew raison d'être, now packaged as a plugin.
+# Hooks into on_exit (classify exit, start polling) and on_recover (re-spawn).
+
+name        = "auto-resume"
+hooks       = ["on_exit", "on_recover"]
+enabled     = true
+version     = "1.0.0"
+description = "Auto-resume Claude sessions after rate limits and API errors"
+author      = "system"

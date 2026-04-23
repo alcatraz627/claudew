@@ -1,0 +1,25 @@
+# claudew — plugin host configuration
+# Docs: ~/.claude/scratchpad/global/milestones/20260417-0415-auto-resume-wrapper.md
+
+[host]
+log_dir              = "~/.claude/claudew/logs"
+state_dir            = "~/.claude/claudew/state"
+max_plugin_ms        = 5000          # per-plugin per-phase timeout
+notify_on_pause      = true          # desktop notification on pause/wait
+notify_on_resume     = true          # desktop notification on resume
+
+[plugins]
+enabled = ["00-auto-resume"]
+
+# Per-plugin overrides — section name matches the plugin directory name.
+# Keys here are injected as environment variables (CLAUDEW_<KEY>) when that
+# plugin's hooks run, and can also be read by the plugin via its plugin.toml
+# defaults.
+
+[plugin_override."00-auto-resume"]
+max_wait_min = 120                   # max minutes to poll before giving up
+poll_sec     = 30                    # seconds between API health checks
+
+# [plugin_override."30-budget-guard"]
+# warn_threshold_pct = 5
+# hard_stop          = false
