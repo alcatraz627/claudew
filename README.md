@@ -1,36 +1,8 @@
-<div align="center">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="128" height="128">
-    <!-- Terminal prompt motif — CLI tool pixel art -->
-    <!-- Background -->
-    <rect x="0" y="0" width="64" height="64" fill="#1a1a2e" rx="4"/>
-    <!-- Terminal top bar -->
-    <rect x="4" y="4" width="56" height="8" fill="#16213e" rx="2"/>
-    <circle cx="10" cy="8" r="2" fill="#e94560"/>
-    <circle cx="17" cy="8" r="2" fill="#f5a623"/>
-    <circle cx="24" cy="8" r="2" fill="#0f3460"/>
-    <!-- Prompt line 1: >_ claudew -->
-    <rect x="8" y="16" width="4" height="6" fill="#e94560"/>
-    <rect x="14" y="16" width="3" height="6" fill="#e94560"/>
-    <rect x="20" y="17" width="32" height="4" fill="#4EAA25"/>
-    <!-- Plugin blocks row 1 -->
-    <rect x="8" y="26" width="10" height="6" fill="#e94560" rx="1"/>
-    <rect x="20" y="26" width="10" height="6" fill="#f5a623" rx="1"/>
-    <rect x="32" y="26" width="10" height="6" fill="#4EAA25" rx="1"/>
-    <rect x="44" y="26" width="10" height="6" fill="#0f3460" rx="1"/>
-    <!-- Plugin blocks row 2 -->
-    <rect x="8" y="34" width="10" height="6" fill="#533483" rx="1"/>
-    <rect x="20" y="34" width="10" height="6" fill="#0f3460" rx="1"/>
-    <!-- Lifecycle arrows -->
-    <rect x="8" y="44" width="48" height="2" fill="#e94560"/>
-    <polygon points="56,41 56,49 62,45" fill="#e94560"/>
-    <!-- Loop back arrow -->
-    <rect x="56" y="45" width="2" height="8" fill="#4EAA25"/>
-    <rect x="8" y="51" width="50" height="2" fill="#4EAA25"/>
-    <polygon points="8,49 8,57 2,53" fill="#4EAA25"/>
-  </svg>
-</div>
+<p align="center">
+  <img src=".github/readme/banner.svg" alt="Claudew banner: plugin lifecycle wrapper for Claude CLI" width="100%">
+</p>
 
-<h1 align="center">claudew</h1>
+<h1 align="center"><img src=".github/readme/favicon.svg" alt="" width="32" height="32"> claudew</h1>
 
 <p align="center">
   Plugin-based lifecycle wrapper for the Claude CLI — auto-resume, session context, budget guard, and more.
@@ -44,6 +16,13 @@
 </p>
 
 ---
+
+<details>
+<summary>Riddle answer</summary>
+
+00-auto-resume: on a rate limit or API error it polls for recovery with exponential backoff and resumes the session.
+
+</details>
 
 ## About
 
